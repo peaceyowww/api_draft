@@ -1,0 +1,12 @@
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\bin\Debug\net10.0\AirlineApi.Domain.deps.json
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\bin\Debug\net10.0\AirlineApi.Domain.dll
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\bin\Debug\net10.0\AirlineApi.Domain.pdb
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.AssemblyInfoInputs.cache
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.AssemblyInfo.cs
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.dll
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\refint\AirlineApi.Domain.dll
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.pdb
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\ref\AirlineApi.Domain.dll
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineA.BF2621BB.Up2Date

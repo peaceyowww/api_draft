@@ -1,0 +1,29 @@
+@AirlineApi.Api_HostAddress = http://localhost:5010
+
+### Register a new passenger
+POST {{AirlineApi.Api_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "salsalani",
+  "middleName": "kum",
+  "lastName": "salam",
+  "gender": "Male",
+  "email": "salam23@gmail.com",
+  "mobileNumber": "09123456789",
+  "address": "240 Rizal Avenue",
+  "birthday": "2000-01-01", 
+  "username": "salani123",
+  "password": "Passw0rd!",
+  "confirmPassword": "Passw0rd!"
+}
+
+
+  ### Login
+POST {{AirlineApi.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "salani123",
+  "password": "Passw0rd!"
+}
