@@ -15,3 +15,4 @@ C:\Users\navar\source\repos\AirlineApi\AirlineApi.Infrastructure\obj\Debug\net10
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Infrastructure\obj\Debug\net10.0\refint\AirlineApi.Infrastructure.dll
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Infrastructure\obj\Debug\net10.0\AirlineApi.Infrastructure.pdb
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Infrastructure\obj\Debug\net10.0\ref\AirlineApi.Infrastructure.dll
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Infrastructure\obj\Debug\net10.0\AirlineApi.Infrastructure.sourcelink.json

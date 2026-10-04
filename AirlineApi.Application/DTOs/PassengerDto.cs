@@ -1,7 +1,6 @@
 ﻿namespace AirlineApi.Application.DTOs;
 
-// What the API returns to clients. Never includes the password hash.
-// Equivalent to what profile.php / dashboard.php display.
+
 public class PassengerDto
 {
     public int PassengerId { get; set; }

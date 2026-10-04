@@ -1,0 +1,389 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\navar\\source\\repos\\AirlineApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.api\\api controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|solutionrelative:airlineapi.api\\api controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.api\\api controllers\\passengerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|solutionrelative:airlineapi.api\\api controllers\\passengerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB9B504-B3B1-CDD4-3F49-80E28B0AFC20}|AirlineApi.Domain\\AirlineApi.Domain.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.domain\\entities\\api\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB9B504-B3B1-CDD4-3F49-80E28B0AFC20}|AirlineApi.Domain\\AirlineApi.Domain.csproj|solutionrelative:airlineapi.domain\\entities\\api\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB9B504-B3B1-CDD4-3F49-80E28B0AFC20}|AirlineApi.Domain\\AirlineApi.Domain.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.domain\\airlineapi.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FCB9B504-B3B1-CDD4-3F49-80E28B0AFC20}|AirlineApi.Domain\\AirlineApi.Domain.csproj|solutionrelative:airlineapi.domain\\airlineapi.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.application\\services\\passengerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|solutionrelative:airlineapi.application\\services\\passengerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.application\\dtos\\passengerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|solutionrelative:airlineapi.application\\dtos\\passengerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.application\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|solutionrelative:airlineapi.application\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.application\\services\\ipassengerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|solutionrelative:airlineapi.application\\services\\ipassengerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E368CFC-5708-0624-33EF-CCD6DFB387AB}|AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.infrastructure\\repositories\\passengerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E368CFC-5708-0624-33EF-CCD6DFB387AB}|AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj|solutionrelative:airlineapi.infrastructure\\repositories\\passengerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E368CFC-5708-0624-33EF-CCD6DFB387AB}|AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.infrastructure\\database\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E368CFC-5708-0624-33EF-CCD6DFB387AB}|AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj|solutionrelative:airlineapi.infrastructure\\database\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E368CFC-5708-0624-33EF-CCD6DFB387AB}|AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.infrastructure\\database\\idbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E368CFC-5708-0624-33EF-CCD6DFB387AB}|AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj|solutionrelative:airlineapi.infrastructure\\database\\idbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|solutionrelative:airlineapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.api\\airlineapi.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|solutionrelative:airlineapi.api\\airlineapi.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.application\\dtos\\updateprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|solutionrelative:airlineapi.application\\dtos\\updateprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.application\\dtos\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|solutionrelative:airlineapi.application\\dtos\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.application\\dtos\\registerpassengerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|solutionrelative:airlineapi.application\\dtos\\registerpassengerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB9B504-B3B1-CDD4-3F49-80E28B0AFC20}|AirlineApi.Domain\\AirlineApi.Domain.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.domain\\entities\\passenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB9B504-B3B1-CDD4-3F49-80E28B0AFC20}|AirlineApi.Domain\\AirlineApi.Domain.csproj|solutionrelative:airlineapi.domain\\entities\\passenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|solutionrelative:airlineapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E368CFC-5708-0624-33EF-CCD6DFB387AB}|AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.infrastructure\\airlineapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9E368CFC-5708-0624-33EF-CCD6DFB387AB}|AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj|solutionrelative:airlineapi.infrastructure\\airlineapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BCA8449C-7868-BD3A-E2A5-08825A725E9F}|AirlineApi.Api\\AirlineApi.Api.csproj|solutionrelative:airlineapi.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.application\\airlineapi.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|solutionrelative:airlineapi.application\\airlineapi.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.application\\common\\validationpatterns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|solutionrelative:airlineapi.application\\common\\validationpatterns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|c:\\users\\navar\\source\\repos\\airlineapi\\airlineapi.application\\interfaces\\ipassengerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCAE527-9039-2816-5D28-C33F551210EE}|AirlineApi.Application\\AirlineApi.Application.csproj|solutionrelative:airlineapi.application\\interfaces\\ipassengerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 145,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Domain\\Entities\\API\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Domain\\Entities\\API\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Domain\\Entities\\API\\ApiResponse.cs",
+              "RelativeToolTip": "AirlineApi.Domain\\Entities\\API\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T00:57:55.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AirlineApi.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Domain\\AirlineApi.Domain.csproj",
+              "RelativeDocumentMoniker": "AirlineApi.Domain\\AirlineApi.Domain.csproj",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Domain\\AirlineApi.Domain.csproj",
+              "RelativeToolTip": "AirlineApi.Domain\\AirlineApi.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-30T00:52:10.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "AirlineApi.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\appsettings.Development.json",
+              "RelativeToolTip": "AirlineApi.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-20T08:13:23.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AirlineApi.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj",
+              "RelativeToolTip": "AirlineApi.Infrastructure\\AirlineApi.Infrastructure.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-20T07:57:58.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AirlineApi.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\AirlineApi.Application.csproj",
+              "RelativeDocumentMoniker": "AirlineApi.Application\\AirlineApi.Application.csproj",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\AirlineApi.Application.csproj",
+              "RelativeToolTip": "AirlineApi.Application\\AirlineApi.Application.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-20T07:19:12.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\Program.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\Program.cs",
+              "RelativeToolTip": "AirlineApi.Api\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T07:13:49.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "AirlineApi.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\appsettings.json",
+              "RelativeToolTip": "AirlineApi.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-20T07:12:23.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PassengersController.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\API Controllers\\PassengersController.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Api\\API Controllers\\PassengersController.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\API Controllers\\PassengersController.cs",
+              "RelativeToolTip": "AirlineApi.Api\\API Controllers\\PassengersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T07:12:03.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\API Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Api\\API Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\API Controllers\\AuthController.cs",
+              "RelativeToolTip": "AirlineApi.Api\\API Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T07:11:13.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AirlineApi.Api.http",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\AirlineApi.Api.http",
+              "RelativeDocumentMoniker": "AirlineApi.Api\\AirlineApi.Api.http",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Api\\AirlineApi.Api.http",
+              "RelativeToolTip": "AirlineApi.Api\\AirlineApi.Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-09-20T07:08:34.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PassengerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Infrastructure\\Repositories\\PassengerRepository.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Infrastructure\\Repositories\\PassengerRepository.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Infrastructure\\Repositories\\PassengerRepository.cs",
+              "RelativeToolTip": "AirlineApi.Infrastructure\\Repositories\\PassengerRepository.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAmwMAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:50:43.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DbConnectionFactory.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Infrastructure\\Database\\DbConnectionFactory.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Infrastructure\\Database\\DbConnectionFactory.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Infrastructure\\Database\\DbConnectionFactory.cs",
+              "RelativeToolTip": "AirlineApi.Infrastructure\\Database\\DbConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:50:26.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IDbConnectionFactory.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Infrastructure\\Database\\IDbConnectionFactory.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Infrastructure\\Database\\IDbConnectionFactory.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Infrastructure\\Database\\IDbConnectionFactory.cs",
+              "RelativeToolTip": "AirlineApi.Infrastructure\\Database\\IDbConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:50:08.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPassengerService.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\Services\\IPassengerService.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Application\\Services\\IPassengerService.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\Services\\IPassengerService.cs",
+              "RelativeToolTip": "AirlineApi.Application\\Services\\IPassengerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:22:32.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PassengerService.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\Services\\PassengerService.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Application\\Services\\PassengerService.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\Services\\PassengerService.cs",
+              "RelativeToolTip": "AirlineApi.Application\\Services\\PassengerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:22:06.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IPassengerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\Interfaces\\IPassengerRepository.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Application\\Interfaces\\IPassengerRepository.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\Interfaces\\IPassengerRepository.cs",
+              "RelativeToolTip": "AirlineApi.Application\\Interfaces\\IPassengerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:21:37.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ValidationPatterns.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\Common\\ValidationPatterns.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Application\\Common\\ValidationPatterns.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\Common\\ValidationPatterns.cs",
+              "RelativeToolTip": "AirlineApi.Application\\Common\\ValidationPatterns.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:21:21.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ServiceResult.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\DTOs\\ServiceResult.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Application\\DTOs\\ServiceResult.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\DTOs\\ServiceResult.cs",
+              "RelativeToolTip": "AirlineApi.Application\\DTOs\\ServiceResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:21:06.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UpdateProfileRequest.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\DTOs\\UpdateProfileRequest.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Application\\DTOs\\UpdateProfileRequest.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\DTOs\\UpdateProfileRequest.cs",
+              "RelativeToolTip": "AirlineApi.Application\\DTOs\\UpdateProfileRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:20:46.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\DTOs\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Application\\DTOs\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\DTOs\\LoginRequest.cs",
+              "RelativeToolTip": "AirlineApi.Application\\DTOs\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:20:27.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RegisterPassengerRequest.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\DTOs\\RegisterPassengerRequest.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Application\\DTOs\\RegisterPassengerRequest.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\DTOs\\RegisterPassengerRequest.cs",
+              "RelativeToolTip": "AirlineApi.Application\\DTOs\\RegisterPassengerRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:20:12.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PassengerDto.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\DTOs\\PassengerDto.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Application\\DTOs\\PassengerDto.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Application\\DTOs\\PassengerDto.cs",
+              "RelativeToolTip": "AirlineApi.Application\\DTOs\\PassengerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:19:53.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Passenger.cs",
+              "DocumentMoniker": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Domain\\Entities\\Passenger.cs",
+              "RelativeDocumentMoniker": "AirlineApi.Domain\\Entities\\Passenger.cs",
+              "ToolTip": "C:\\Users\\navar\\source\\repos\\AirlineApi\\AirlineApi.Domain\\Entities\\Passenger.cs",
+              "RelativeToolTip": "AirlineApi.Domain\\Entities\\Passenger.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T06:00:36.346Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -11,8 +11,16 @@ public class DbConnectionFactory : IDbConnectionFactory
     {
         _connectionString =
             configuration.GetConnectionString("DefaultConnection")
-            ?? throw new InvalidOperationException("Database connection string is not configured.");
+            ?? throw new InvalidOperationException(
+                "Configure ConnectionStrings:DefaultConnection before using the database.");
+
+        if (string.IsNullOrWhiteSpace(_connectionString))
+        {
+            throw new InvalidOperationException(
+                "DefaultConnection must not be empty.");
+        }
     }
 
-    public MySqlConnection CreateConnection() => new MySqlConnection(_connectionString);
+    public MySqlConnection CreateConnection()
+        => new MySqlConnection(_connectionString);
 }

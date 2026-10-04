@@ -1,6 +1,6 @@
 ﻿namespace AirlineApi.Domain.Entities;
 
-// Mirrors tbl_passengers in airline_db (see airline.sql)
+
 public class Passenger
 {
     public int PassengerId { get; set; }
@@ -14,10 +14,10 @@ public class Passenger
     public string Address { get; set; } = string.Empty;
     public string UserName { get; set; } = string.Empty;
 
-    // Stores the BCrypt hash (equivalent of PHP password_hash())
+
     public string Password { get; set; } = string.Empty;
 
-    public string Status { get; set; } = "ACTIVE";   // ACTIVE | INACTIVE
+    public string Status { get; set; } = "ACTIVE";  
     public string AcctType { get; set; } = "PASSENGER";
     public DateTime CreatedAt { get; set; }
 }

@@ -1,8 +1,6 @@
 ﻿namespace AirlineApi.Application.DTOs;
 
-// Small helper so services can return either a success payload
-// or a list of validation/business errors, similar to how the PHP
-// scripts built up an $errors[] array before redirecting back.
+
 public class ServiceResult<T>
 {
     public bool Success { get; init; }

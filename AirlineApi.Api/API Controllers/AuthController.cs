@@ -1,10 +1,10 @@
 ﻿using AirlineApi.Application.DTOs;
 using AirlineApi.Application.Services;
+using AirlineApi.Domain.Entities.API;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AirlineApi.Api.Controllers;
 
-// Ports index.php + login.php (authenticate) and register.php + save.php (create account).
 [ApiController]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
@@ -16,27 +16,36 @@ public class AuthController : ControllerBase
         _passengerService = passengerService;
     }
 
-    // POST /api/auth/register  (equivalent of save.php)
     [HttpPost("register")]
     public async Task<ActionResult<PassengerDto>> Register(RegisterPassengerRequest request)
     {
         var result = await _passengerService.RegisterAsync(request);
 
         if (!result.Success)
-            return BadRequest(new { errors = result.Errors });
+        {
+            return BadRequest(new ApiResponse
+            {
+                StatusCode = 400,
+                Success = false,
+                Message = "Registration failed.",
+                Data = result.Errors
+                    .Select(error => (object)error)
+                    .ToList()
+            });
+        }
 
-        return CreatedAtAction(
-            nameof(PassengersController.GetById),
-            "Passengers",
-            new { id = result.Data!.PassengerId },
-            result.Data);
+        return StatusCode(201, new ApiResponse
+        {
+            StatusCode = 201,
+            Success = true,
+            Message = "Passenger registered successfully.",
+            Data = new List<object>
+            {
+                result.Data!
+            }
+        });
     }
 
-    // POST /api/auth/login  (equivalent of login.php)
-    // Note: the original app used PHP sessions to keep the passenger logged in.
-    // This API is stateless -- it simply confirms the credentials and returns
-    // the passenger's data. Wire up cookie auth or a JWT here if you need the
-    // client to stay "logged in" between requests.
     [HttpPost("login")]
     public async Task<ActionResult<PassengerDto>> Login(LoginRequest request)
     {

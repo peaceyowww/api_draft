@@ -5,6 +5,7 @@ C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\Airli
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.AssemblyInfoInputs.cache
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.AssemblyInfo.cs
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.sourcelink.json
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.dll
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\refint\AirlineApi.Domain.dll
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Domain\obj\Debug\net10.0\AirlineApi.Domain.pdb

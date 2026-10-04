@@ -8,6 +8,7 @@ C:\Users\navar\source\repos\AirlineApi\AirlineApi.Application\obj\Debug\net10.0\
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Application\obj\Debug\net10.0\AirlineApi.Application.AssemblyInfoInputs.cache
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Application\obj\Debug\net10.0\AirlineApi.Application.AssemblyInfo.cs
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Application\obj\Debug\net10.0\AirlineApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Application\obj\Debug\net10.0\AirlineApi.Application.sourcelink.json
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Application\obj\Debug\net10.0\AirlineA.DF31DD69.Up2Date
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Application\obj\Debug\net10.0\AirlineApi.Application.dll
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Application\obj\Debug\net10.0\refint\AirlineApi.Application.dll

@@ -6,8 +6,8 @@ using AirlineApi.Infrastructure.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+builder.Services.AddProblemDetails();
 
-// Dependency injection
 builder.Services.AddScoped<IPassengerService, PassengerService>();
 builder.Services.AddScoped<IPassengerRepository, PassengerRepository>();
 builder.Services.AddScoped<IDbConnectionFactory, DbConnectionFactory>();
@@ -15,19 +15,24 @@ builder.Services.AddScoped<IDbConnectionFactory, DbConnectionFactory>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// CORS: replace with the actual origin(s) your frontend runs on.
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("DefaultPolicy", policy =>
     {
         policy
-            .WithOrigins("http://localhost:3000", "http://localhost:5173")
+            .WithOrigins(
+                "http://localhost",
+                "http://localhost:3000",
+                "http://localhost:5173"
+            )
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
 });
 
 var app = builder.Build();
+
+app.UseExceptionHandler();
 
 if (app.Environment.IsDevelopment())
 {

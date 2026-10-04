@@ -43,3 +43,4 @@ C:\Users\navar\source\repos\AirlineApi\AirlineApi.Api\obj\Debug\net10.0\ref\Airl
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\navar\source\repos\AirlineApi\AirlineApi.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\navar\source\repos\AirlineApi\AirlineApi.Api\obj\Debug\net10.0\AirlineApi.Api.sourcelink.json

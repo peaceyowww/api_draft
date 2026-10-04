@@ -1,9 +1,8 @@
 @AirlineApi.Api_HostAddress = http://localhost:5010
 
-### Register a new passenger
+
 POST {{AirlineApi.Api_HostAddress}}/api/auth/register
 Content-Type: application/json
-
 {
   "firstName": "salsalani",
   "middleName": "kum",
@@ -17,7 +16,6 @@ Content-Type: application/json
   "password": "Passw0rd!",
   "confirmPassword": "Passw0rd!"
 }
-
 
   ### Login
 POST {{AirlineApi.Api_HostAddress}}/api/auth/login

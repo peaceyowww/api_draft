@@ -14,9 +14,7 @@ public class PassengerService : IPassengerService
         _repository = repository;
     }
 
-    // ---------------------------------------------------------------
-    // Register  (ports save.php)
-    // ---------------------------------------------------------------
+
     public async Task<ServiceResult<PassengerDto>> RegisterAsync(RegisterPassengerRequest request)
     {
         var errors = new List<string>();
@@ -100,21 +98,16 @@ public class PassengerService : IPassengerService
         return ServiceResult<PassengerDto>.Ok(MapToDto(passenger));
     }
 
-    // ---------------------------------------------------------------
-    // Login  (ports login.php + config.php's verifyUser())
-    // ---------------------------------------------------------------
     public async Task<ServiceResult<PassengerDto>> LoginAsync(LoginRequest request)
     {
         var username = (request.Username ?? string.Empty).Trim();
         var password = request.Password ?? string.Empty;
 
-        // SP_LoginPassenger only returns ACTIVE accounts, same as the PHP version.
         var user = await _repository.GetActiveByUsernameAsync(username);
 
         if (user is null)
         {
-            // Could be "doesn't exist" or "exists but inactive" -- check status
-            // to give the same distinct messages the PHP app gives.
+          
             var status = await _repository.GetStatusByUsernameAsync(username);
             if (status == "INACTIVE")
                 return ServiceResult<PassengerDto>.Fail("Your account has been deactivated.");
@@ -128,18 +121,14 @@ public class PassengerService : IPassengerService
         return ServiceResult<PassengerDto>.Ok(MapToDto(user));
     }
 
-    // ---------------------------------------------------------------
-    // Profile  (ports profile.php)
-    // ---------------------------------------------------------------
+
     public async Task<PassengerDto?> GetProfileAsync(int passengerId)
     {
         var passenger = await _repository.GetByIdAsync(passengerId);
         return passenger is null ? null : MapToDto(passenger);
     }
 
-    // ---------------------------------------------------------------
-    // Update profile  (ports update_profile.php)
-    // ---------------------------------------------------------------
+
     public async Task<ServiceResult<bool>> UpdateProfileAsync(int passengerId, UpdateProfileRequest request)
     {
         var current = await _repository.GetByIdAsync(passengerId);
@@ -195,14 +184,8 @@ public class PassengerService : IPassengerService
             : ServiceResult<bool>.Fail("Update failed. Please try again.");
     }
 
-    // ---------------------------------------------------------------
-    // Deactivate  (ports deactivate.php)
-    // ---------------------------------------------------------------
     public Task<bool> DeactivateAsync(int passengerId) => _repository.DeactivateAsync(passengerId);
 
-    // ---------------------------------------------------------------
-    // Availability checks  (ports the searchUserBy... methods used by validation.php)
-    // ---------------------------------------------------------------
     public Task<bool> IsUsernameTakenAsync(string userName) => _repository.UsernameExistsAsync(userName);
     public Task<bool> IsEmailTakenAsync(string email) => _repository.EmailExistsAsync(email);
     public Task<bool> IsPhoneTakenAsync(string phone) => _repository.PhoneExistsAsync(phone);
