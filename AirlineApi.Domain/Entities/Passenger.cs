@@ -1,4 +1,4 @@
-﻿namespace AirlineApi.Domain.Entities;
+namespace AirlineApi.Domain.Entities;
 
 
 public class Passenger

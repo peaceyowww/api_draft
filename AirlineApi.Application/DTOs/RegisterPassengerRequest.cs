@@ -1,4 +1,4 @@
-﻿namespace AirlineApi.Application.DTOs;
+namespace AirlineApi.Application.DTOs;
 
 
 public class RegisterPassengerRequest

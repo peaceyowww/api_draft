@@ -1,27 +1,45 @@
-@AirlineApi.Api_HostAddress = http://localhost:5010
+@host = http://localhost:5010
 
-
-POST {{AirlineApi.Api_HostAddress}}/api/auth/register
+POST {{host}}/api/auth/register
 Content-Type: application/json
+
 {
-  "firstName": "salsalani",
-  "middleName": "kum",
-  "lastName": "salam",
-  "gender": "Male",
-  "email": "salam23@gmail.com",
+  "firstName": "Salani",
+  "middleName": "Kum",
+  "lastName": "Salam",
+  "gender": "Male", 
+  "email": "salam23@gmail.com", 
   "mobileNumber": "09123456789",
   "address": "240 Rizal Avenue",
-  "birthday": "2000-01-01", 
+  "birthday": "2000-01-01",
   "username": "salani123",
   "password": "Passw0rd!",
   "confirmPassword": "Passw0rd!"
 }
 
-  ### Login
-POST {{AirlineApi.Api_HostAddress}}/api/auth/login
+
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{ "username": "salani123", "password": "Passw0rd!" }
+
+@token = PASTE_TOKEN_HERE
+GET {{host}}/api/passengers/1
+Authorization: Bearer {{token}}
+
+PUT {{host}}/api/passengers/1
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-  "username": "salani123",
-  "password": "Passw0rd!"
+  "email": "salam23@gmail.com",
+  "mobileNumber": "09123456789",
+  "address": "240 Rizal Avenue",
+  "currentPassword": "Passw0rd!",
+  "password": "NewPassw0rd!", 
+  "confirmPassword": "NewPassw0rd!"
 }
+
+GET {{host}}/api/passengers/1
+
+GET {{host}}/api/passengers/check-username?value=salani123

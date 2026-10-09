@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration;
 using MySqlConnector;
 
 namespace AirlineApi.Infrastructure.Database;
@@ -11,16 +11,8 @@ public class DbConnectionFactory : IDbConnectionFactory
     {
         _connectionString =
             configuration.GetConnectionString("DefaultConnection")
-            ?? throw new InvalidOperationException(
-                "Configure ConnectionStrings:DefaultConnection before using the database.");
-
-        if (string.IsNullOrWhiteSpace(_connectionString))
-        {
-            throw new InvalidOperationException(
-                "DefaultConnection must not be empty.");
-        }
+            ?? throw new InvalidOperationException("Database connection string is not configured.");
     }
 
-    public MySqlConnection CreateConnection()
-        => new MySqlConnection(_connectionString);
+    public MySqlConnection CreateConnection() => new MySqlConnection(_connectionString);
 }

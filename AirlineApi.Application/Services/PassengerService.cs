@@ -1,4 +1,4 @@
-﻿using AirlineApi.Application.Common;
+using AirlineApi.Application.Common;
 using AirlineApi.Application.DTOs;
 using AirlineApi.Application.Interfaces;
 using AirlineApi.Domain.Entities;
@@ -7,13 +7,17 @@ namespace AirlineApi.Application.Services;
 
 public class PassengerService : IPassengerService
 {
+
+    private static readonly string DummyHash = BCrypt.Net.BCrypt.HashPassword("dummy-password-for-timing-only");
+
+    private const string InvalidLogin = "Invalid username or password.";
+
     private readonly IPassengerRepository _repository;
 
     public PassengerService(IPassengerRepository repository)
     {
         _repository = repository;
     }
-
 
     public async Task<ServiceResult<PassengerDto>> RegisterAsync(RegisterPassengerRequest request)
     {
@@ -25,7 +29,7 @@ public class PassengerService : IPassengerService
         var gender = ValidationPatterns.SanitizeInput(request.Gender);
         var address = ValidationPatterns.SanitizeInput(request.Address);
         var username = ValidationPatterns.SanitizeInput(request.Username);
-        var email = request.Email?.Trim() ?? string.Empty;
+        var email = ValidationPatterns.SanitizeInput(request.Email).ToLowerInvariant();
         var mobileNumber = System.Text.RegularExpressions.Regex.Replace(request.MobileNumber ?? "", "[^0-9]", "");
         var password = request.Password ?? string.Empty;
         var confirmPassword = request.ConfirmPassword ?? string.Empty;
@@ -42,7 +46,7 @@ public class PassengerService : IPassengerService
         if (gender != "Male" && gender != "Female")
             errors.Add("Please select a gender.");
 
-        if (!ValidationPatterns.Email.IsMatch(email))
+        if (!ValidationPatterns.IsEmailValid(email))
             errors.Add("Invalid email address.");
 
         if (!ValidationPatterns.Phone.IsMatch(mobileNumber))
@@ -53,29 +57,33 @@ public class PassengerService : IPassengerService
         else if (!ValidationPatterns.Address.IsMatch(address))
             errors.Add("Address must contain letters and numbers only (no special characters).");
 
-        DateOnly birthDate = default;
-        if (!DateOnly.TryParse(request.Birthday, out birthDate) || !ValidationPatterns.IsAtLeast18(birthDate))
-            errors.Add("You must be at least 18 years old to register.");
+        if (!ValidationPatterns.TryParseBirthDate(request.Birthday, out var birthDate)
+            || !ValidationPatterns.IsAtLeast18(birthDate))
+            errors.Add("You must be at least 18 years old to register (format yyyy-MM-dd).");
 
         if (!ValidationPatterns.Username.IsMatch(username))
-            errors.Add("Username must be at least 6 characters, letters and numbers only.");
+            errors.Add("Username must be 6-50 characters, letters and numbers only.");
 
-        if (!ValidationPatterns.Password.IsMatch(password))
-            errors.Add("Password must be at least 8 characters and include uppercase, lowercase, number, and special character.");
+        if (!ValidationPatterns.IsStrongPassword(password))
+            errors.Add("Password must be 8-64 characters and include uppercase, lowercase, number, and special character.");
 
         if (password != confirmPassword)
             errors.Add("Passwords do not match.");
 
-        if (await _repository.UsernameExistsAsync(username))
-            errors.Add("Username already taken. Please choose another.");
+        if (errors.Count == 0)
+        {
+            if (await _repository.UsernameExistsAsync(username))
+                errors.Add("Username already taken. Please choose another.");
 
-        if (await _repository.EmailExistsAsync(email))
-            errors.Add("Email already registered.");
+            if (await _repository.EmailExistsAsync(email))
+                errors.Add("Email already registered.");
+
+            if (await _repository.PhoneExistsAsync(mobileNumber))
+                errors.Add("Phone number already registered.");
+        }
 
         if (errors.Count > 0)
             return ServiceResult<PassengerDto>.Fail(errors);
-
-        var hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
 
         var passenger = new Passenger
         {
@@ -88,13 +96,15 @@ public class PassengerService : IPassengerService
             Phone = mobileNumber,
             Address = address,
             UserName = username,
-            Password = hashedPassword,
+            Password = BCrypt.Net.BCrypt.HashPassword(password),
             AcctType = "PASSENGER"
         };
 
         var newId = await _repository.InsertAsync(passenger);
-        passenger.PassengerId = newId;
+        if (newId <= 0)
+            return ServiceResult<PassengerDto>.Fail("Username, email or phone number is already registered.");
 
+        passenger.PassengerId = newId;
         return ServiceResult<PassengerDto>.Ok(MapToDto(passenger));
     }
 
@@ -103,31 +113,24 @@ public class PassengerService : IPassengerService
         var username = (request.Username ?? string.Empty).Trim();
         var password = request.Password ?? string.Empty;
 
+        if (username.Length is 0 or > 50 || password.Length is 0 or > 128)
+            return ServiceResult<PassengerDto>.Fail(InvalidLogin);
+
         var user = await _repository.GetActiveByUsernameAsync(username);
 
-        if (user is null)
-        {
-          
-            var status = await _repository.GetStatusByUsernameAsync(username);
-            if (status == "INACTIVE")
-                return ServiceResult<PassengerDto>.Fail("Your account has been deactivated.");
+        var passwordOk = BCrypt.Net.BCrypt.Verify(password, user?.Password ?? DummyHash);
 
-            return ServiceResult<PassengerDto>.Fail("Login failed: username does not exist.");
-        }
-
-        if (!BCrypt.Net.BCrypt.Verify(password, user.Password))
-            return ServiceResult<PassengerDto>.Fail("Login failed: wrong password.");
+        if (user is null || !passwordOk)
+            return ServiceResult<PassengerDto>.Fail(InvalidLogin);
 
         return ServiceResult<PassengerDto>.Ok(MapToDto(user));
     }
-
 
     public async Task<PassengerDto?> GetProfileAsync(int passengerId)
     {
         var passenger = await _repository.GetByIdAsync(passengerId);
         return passenger is null ? null : MapToDto(passenger);
     }
-
 
     public async Task<ServiceResult<bool>> UpdateProfileAsync(int passengerId, UpdateProfileRequest request)
     {
@@ -137,13 +140,13 @@ public class PassengerService : IPassengerService
 
         var errors = new List<string>();
 
-        var email = request.Email?.Trim() ?? string.Empty;
+        var email = ValidationPatterns.SanitizeInput(request.Email).ToLowerInvariant();
         var mobileNumber = System.Text.RegularExpressions.Regex.Replace(request.MobileNumber ?? "", "[^0-9]", "");
         var address = ValidationPatterns.SanitizeInput(request.Address);
         var password = request.Password ?? string.Empty;
         var confirmPassword = request.ConfirmPassword ?? string.Empty;
 
-        if (!ValidationPatterns.Email.IsMatch(email))
+        if (!ValidationPatterns.IsEmailValid(email))
             errors.Add("Invalid email address.");
 
         if (!ValidationPatterns.Phone.IsMatch(mobileNumber))
@@ -154,16 +157,26 @@ public class PassengerService : IPassengerService
         else if (!ValidationPatterns.Address.IsMatch(address))
             errors.Add("Address must contain letters and numbers only (no special characters).");
 
-        if (!string.Equals(email, current.Email, StringComparison.OrdinalIgnoreCase)
-            && await _repository.EmailExistsAsync(email))
+        if (errors.Count == 0)
         {
-            errors.Add("Email already registered.");
+            if (!string.Equals(email, current.Email, StringComparison.OrdinalIgnoreCase)
+                && await _repository.EmailExistsAsync(email))
+                errors.Add("Email already registered.");
+
+            if (mobileNumber != current.Phone && await _repository.PhoneExistsAsync(mobileNumber))
+                errors.Add("Phone number already registered.");
         }
 
         if (password != string.Empty)
         {
-            if (!ValidationPatterns.Password.IsMatch(password))
-                errors.Add("Password must be at least 8 characters and include uppercase, lowercase, number, and special character.");
+            var currentPassword = request.CurrentPassword ?? string.Empty;
+            var storedHash = await _repository.GetPasswordHashAsync(passengerId);
+            if (storedHash is null || currentPassword.Length is 0 or > 128
+                || !BCrypt.Net.BCrypt.Verify(currentPassword, storedHash))
+                errors.Add("Current password is incorrect.");
+
+            if (!ValidationPatterns.IsStrongPassword(password))
+                errors.Add("Password must be 8-64 characters and include uppercase, lowercase, number, and special character.");
 
             if (password != confirmPassword)
                 errors.Add("Passwords do not match.");
@@ -186,14 +199,15 @@ public class PassengerService : IPassengerService
 
     public Task<bool> DeactivateAsync(int passengerId) => _repository.DeactivateAsync(passengerId);
 
-    public Task<bool> IsUsernameTakenAsync(string userName) => _repository.UsernameExistsAsync(userName);
-    public Task<bool> IsEmailTakenAsync(string email) => _repository.EmailExistsAsync(email);
-    public Task<bool> IsPhoneTakenAsync(string phone) => _repository.PhoneExistsAsync(phone);
+    public Task<bool> IsUsernameTakenAsync(string userName) => _repository.UsernameExistsAsync(userName.Trim());
+    public Task<bool> IsEmailTakenAsync(string email) => _repository.EmailExistsAsync(email.Trim().ToLowerInvariant());
+    public Task<bool> IsPhoneTakenAsync(string phone) =>
+        _repository.PhoneExistsAsync(System.Text.RegularExpressions.Regex.Replace(phone, "[^0-9]", ""));
 
     private static PassengerDto MapToDto(Passenger p)
     {
         var birth = DateOnly.FromDateTime(p.BirthDate);
-        var today = DateOnly.FromDateTime(DateTime.Today);
+        var today = DateOnly.FromDateTime(DateTime.UtcNow);
         int age = today.Year - birth.Year;
         if (birth > today.AddYears(-age)) age--;
 

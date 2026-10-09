@@ -1,4 +1,4 @@
-﻿using AirlineApi.Application.DTOs;
+using AirlineApi.Application.DTOs;
 
 namespace AirlineApi.Application.Services;
 
@@ -15,8 +15,6 @@ public interface IPassengerService
     Task<bool> DeactivateAsync(int passengerId);
 
     Task<bool> IsUsernameTakenAsync(string userName);
-
     Task<bool> IsEmailTakenAsync(string email);
-
     Task<bool> IsPhoneTakenAsync(string phone);
 }
